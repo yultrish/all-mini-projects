@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.users{
+    display: grid;
+    /* grid-template-columns: 18rem auto; */
+    margin: 2rem 0;
+    position: relative;
+    background-image: linear-gradient(to right, #4851ff, #f02aa6);
+    color: #fff;
+
+    
+
+
+}
+
+.user{
+     border: 2px solid;
+     padding: 1rem ;
+}
+
+.icons{
+    position: absolute;
+    right: 0;
+    margin-top: 1rem;
+    padding-right: 0.8rem;
+    
+}
+
+@media screen and (min-width:989px) {
+   .user{
+        display: grid;
+       display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     /* background-color: red; */
+     /* display: none;  */
+   } 
+}

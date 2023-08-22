@@ -33,8 +33,7 @@
 @media screen and (min-width:989px) {
    .user{
         display: grid;
-       display: grid;
-     grid-template-columns: repeat(3, 1fr);
+     grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr;
      /* background-color: red; */
      /* display: none;  */
    } 

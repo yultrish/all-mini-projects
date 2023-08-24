@@ -27,8 +27,15 @@
     right: 0;
     margin-top: 1rem;
     padding-right: 0.8rem;
+    cursor: pointer;
     
 }
+
+.user-deleting-transition{
+    opacity: 0;
+    transition: opacity 2s ease-out;
+}
+
 
 @media screen and (min-width:989px) {
    .user{

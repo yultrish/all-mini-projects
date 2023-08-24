@@ -45,27 +45,27 @@ window.addEventListener('load', async () => {
 
     await displayUsers(); 
 
-     const deleteUser = async (userId) => {
+    const deleteUser = async (userId) => {
         try {
-            const result = await fetch(`http://kojoyeboah53i-d962a2da663c.herokuapp.com/api/ordabl/users/${userId}`,{
-                method: 'DELETE',
-                // headers: {
-                //     "Content-Type": "application/json"
-                // }
-
+            const response = await fetch(`https://kojoyeboah53i-d962a2da663c.herokuapp.com/api/ordabl/profile/${userId}`, {
+                method: "DELETE",
+                headers: {
+                    "Content-Type": "application/json"
+                }
             });
-            
 
-            if (result.status === 200) {
-                console.log(`User with ID ${userId} deleted successfully.`);
-                // You can also remove the deleted user's HTML element from the DOM if needed.
+            if (response.status === 200 || response.status === 201) {
+                console.log('User deleted successfully');
+                return true;
             } else {
-                console.log(`Failed to delete user with ID ${userId}.`);
+                console.log('Failed to delete user');
+                return false;
             }
         } catch (err) {
             console.error(err);
+            return false;
         }
-    };
+    }    
        //beginning of delete event
                 const deleteButtons = document.querySelectorAll('.delete-button');
                 deleteButtons.forEach(button => {

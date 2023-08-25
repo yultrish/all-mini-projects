@@ -93,7 +93,7 @@ window.addEventListener('load',async (e) => {
                 })
                 console.log(result)
                 if (result.status===200||result.status===201){
-                        console.log('User deleted successfully');
+                        console.log('item deleted successfully');
                          itemToDelete.addEventListener('transitionend', () => {
                                     itemToDelete.remove();
                                 });

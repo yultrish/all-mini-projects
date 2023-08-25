@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.header{
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(240,42,102,1) 100%);
+}
+
 .users{
     display: grid;
     /* grid-template-columns: 18rem auto; */
@@ -45,3 +59,5 @@
      /* display: none;  */
    } 
 }
+
+

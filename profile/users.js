@@ -26,9 +26,12 @@ window.addEventListener('load', async () => {
                         <span class="material-symbols-outlined delete-button" data-user-id="${user.id}">
                         delete
                         </span>
-                        <span class="material-symbols-outlined edit-button" id="${user.id}">
+                        <a href="./update.html">
+                         <span class="material-symbols-outlined edit-button" id="${user.id}">
                         edit_square
                         </span>
+                        </a>
+                       
                    </div>
                    </div>
                     `;
